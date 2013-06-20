@@ -2,10 +2,10 @@ require "twitter"
 require "CSV"
 
 Twitter.configure do |config|
-  config.consumer_key = "R8ZdsdR5YmpGanFDZlItCg"
-  config.consumer_secret = "4nZb67v4vx1n3sX9tVLrz9LI2qpJhEBwMkx0kmsR8"
-  config.oauth_token = "1455072764-1YjPcw8JKU7Em1IqfDnSCFmwGSJPxPoFjUNbmll"
-  config.oauth_token_secret = "Qa5tPfyya08Thcd0zlOkhuRwnSYhkW4lAG6UxqK6AE"
+  config.consumer_key = "sFz0TN0qpzdsMcxgjnkuqw"
+  config.consumer_secret = "LCanX1hcizUSeZit8VqfMrfePD58efwcrFdPV63ddY"
+  config.oauth_token = "757421383-UNdBsxeqoR5tHfRs6pN84K9sygTONtiU2i3UBe4"
+  config.oauth_token_secret = "tOhjZlEekjacULNg7usQDaGVZLO2GIwdeiNHdOshbIU"
 end
 
 tweets = [] 
@@ -30,6 +30,7 @@ end
 # end
 
 CSV.open("Hail_tweets.csv", "w") do |csv|
+	csv << ["handle", "text", "url"]
 	10.times do |tweet|
 		csv << [tweets[tweet].join(",")]
 	end
