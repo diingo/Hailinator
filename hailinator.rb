@@ -2,10 +2,10 @@ require "twitter"
 require "CSV"
 
 Twitter.configure do |config|
-  config.consumer_key = "sFz0TN0qpzdsMcxgjnkuqw"
-  config.consumer_secret = "LCanX1hcizUSeZit8VqfMrfePD58efwcrFdPV63ddY"
-  config.oauth_token = "757421383-UNdBsxeqoR5tHfRs6pN84K9sygTONtiU2i3UBe4"
-  config.oauth_token_secret = "tOhjZlEekjacULNg7usQDaGVZLO2GIwdeiNHdOshbIU"
+  config.consumer_key = ""
+  config.consumer_secret = ""
+  config.oauth_token = ""
+  config.oauth_token_secret = ""
 end
 
 tweets = [] 
